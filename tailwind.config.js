@@ -12,7 +12,8 @@ export default {
       softDarkText: "#767B88",
       white: "#F6F6FF",
       darkText: "#3C3C47",
-      accent: "#54E27E"
+      accent: "#54E27E",
+      navyBG: "#1E1E2E"
     },
     fontFamily: {
       inter: ["Inter", "sans-serif"]
