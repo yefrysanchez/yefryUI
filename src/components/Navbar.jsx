@@ -5,7 +5,7 @@ const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [isDark, setIsDark] = useState(true);
   return (
-    <header className="h-20 lg:hidden">
+    <header className="h-20 lg:hidden ">
       <nav className="h-full flex justify-between items-center ">
         <div className="h-10 w-10 rounded-full overflow-hidden">
           <img

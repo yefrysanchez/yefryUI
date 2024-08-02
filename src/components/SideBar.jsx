@@ -14,7 +14,7 @@ const SideBar = () => {
 
   return (
     <header
-      className={`hidden relative lg:flex flex-col   ${
+      className={`hidden  fixed lg:flex flex-col   ${
         isOpen
           ? "w-52 px-3 transition-all duration-500 overflow-hidden"
           : "w-20 items-center transition-all duration-500"

@@ -11,7 +11,7 @@ const NavbarLinks = ({setIsOpen}) => {
   ];
 
   return (
-    <ul className="bg-navyBG fixed inset-0 pt-24 w-full flex flex-col gap-4 px-4 text-xl">
+    <ul className="bg-navyBG fixed z-50 inset-0 pt-24 w-full flex flex-col gap-4 px-4 text-xl">
       {links.map((link, i) => (
         <NavLink
         onClick={()=> setIsOpen(false)}

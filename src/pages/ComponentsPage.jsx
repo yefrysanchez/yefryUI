@@ -1,7 +1,9 @@
 
 const ComponentsPage = () => {
   return (
-    <div>ComponentsPage</div>
+    <main className="max-w-4xl mx-auto">
+components
+    </main>
   )
 }
 
