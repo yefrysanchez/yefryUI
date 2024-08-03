@@ -34,7 +34,7 @@ const Footer = () => {
 
               <p className="text-lg text-softDarkText"> Open to work</p>
             </div>
-      <div className="h-32 w-32 ml-auto absolute bottom-8 right-4 md:bottom-12 md:right-12">
+      <div className="h-28 w-28 ml-auto absolute bottom-8 right-4 md:bottom-12 md:right-12">
         <img src="/logo.png" alt="logo image" />
       </div>
     </footer>

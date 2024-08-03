@@ -5,7 +5,7 @@ const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [isDark, setIsDark] = useState(true);
   return (
-    <header className="h-20 lg:hidden ">
+    <header className="h-20 lg:hidden mb-8">
       <nav className="h-full flex justify-between items-center ">
         <div className="h-10 w-10 rounded-full overflow-hidden">
           <img
@@ -22,7 +22,7 @@ const Navbar = () => {
               <i className="fa-solid fa-sun"></i>
             )}
           </button>
-          <button className="bg-navyBG z-10 border border-softDarkText/30 py-3 px-4 rounded-full hover:opacity-85" onClick={() => setIsOpen(!isOpen)}>
+          <button className="bg-navyBG z-50 border border-softDarkText/30 py-3 px-4 rounded-full hover:opacity-85" onClick={() => setIsOpen(!isOpen)}>
             {isOpen ? (
               <i className="fa-solid text-4xl fa-close"></i>
             ) : (

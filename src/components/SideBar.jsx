@@ -13,8 +13,8 @@ const SideBar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <header
-      className={`hidden  fixed lg:flex flex-col   ${
+    <aside
+      className={`hidden  fixed lg:flex flex-col z-50 shadow-lg shadow-darkBackground ${
         isOpen
           ? "w-52 px-3 transition-all duration-500 overflow-hidden"
           : "w-20 items-center transition-all duration-500"
@@ -82,7 +82,7 @@ const SideBar = () => {
           </NavLink>
         ))}
       </ul>
-    </header>
+    </aside>
   );
 };
 
