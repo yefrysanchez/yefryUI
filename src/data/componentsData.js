@@ -36,7 +36,38 @@ export const componentData = [
   },
   {
     title: "Buttons",
-    components: [{ title: "component Title", code: "code goes here" }],
+    components: [
+      {
+        id: 1,
+        title: "Simple Button",
+        code: `import React from "react";
+
+const SimpleBtn = () => {
+  return (
+    <button className="p-2 rounded-lg bg-[#6366F1] hover:opacity-90 transition">
+      Click Me
+    </button>
+  );
+};
+
+export default SimpleBtn;`,
+      },
+      {
+        id: 2,
+        title: "Simple Button",
+        code: `import React from "react";
+
+const SimpleBtn = () => {
+  return (
+    <button className="p-2 rounded-lg bg-[#6366F1] hover:opacity-90 transition">
+      Click Me
+    </button>
+  );
+};
+
+export default SimpleBtn;`,
+      },
+    ],
   },
   {
     title: "Cards",
