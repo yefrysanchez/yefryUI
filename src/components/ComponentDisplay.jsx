@@ -25,18 +25,18 @@ const ComponentDisplay = ({ data }) => {
             </h2>
             <div className="relative">
               <button
-                onClick={() => handleViewToggle(i, true)}
+                onClick={() => handleViewToggle(i, false)}
                 className={`select-none z-10 transition duration-300 p-4 border border-navyBG ${
-                  viewedStates[i] ? "bg-accent" : ""
+                  viewedStates[i] ? "" : "bg-accent"
                 }`}
               >
                 <i className="fa-regular fa-eye mr-1"></i>
                 <span>VIEW</span>
               </button>
               <button
-                onClick={() => handleViewToggle(i, false)}
+                onClick={() => handleViewToggle(i, true)}
                 className={`select-none p-4 transition duration-300 border border-navyBG ${
-                  viewedStates[i] ? "" : "bg-accent"
+                  viewedStates[i] ? "bg-accent" : ""
                 }`}
               >
                 <i className="fa-solid fa-code mr-1"></i>
@@ -46,11 +46,11 @@ const ComponentDisplay = ({ data }) => {
           </div>
           <div className="min-h-[200px] border border-navyBG  flex justify-center items-center">
             {viewedStates[i] ? (
-              <div className="">
+              <MyCodeBlock code={component.code} />
+            ) : (<div className="">
                 <SimpleBtn />
               </div>
-            ) : (
-              <MyCodeBlock code={component.code} />
+              
             )}
           </div>
         </div>
@@ -65,7 +65,6 @@ ComponentDisplay.propTypes = {
     data: PropTypes.shape({
       components: PropTypes.arrayOf(
         PropTypes.shape({
-          id: PropTypes.string.isRequired,
           title: PropTypes.string.isRequired,
           code: PropTypes.string
         })

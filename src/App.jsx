@@ -6,7 +6,7 @@ import AppRouter from "./router/AppRouter";
 
 function App() {
   return (
-    <main className="bg-darkBackground min-h-screen  text-white font-inter px-4 lg:p-6">
+    <main className="bg-darkBackground min-h-screen pb-4 text-white font-inter px-4 lg:p-6">
       <ScrollToTop />
       <Navbar />
       <SideBar />

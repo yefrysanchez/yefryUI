@@ -38,7 +38,7 @@ export const componentData = [
     title: "Buttons",
     components: [
       {
-        id: 1,
+
         title: "Simple Button",
         code: `import React from "react";
 
@@ -53,7 +53,7 @@ const SimpleBtn = () => {
 export default SimpleBtn;`,
       },
       {
-        id: 2,
+ 
         title: "Simple Button",
         code: `import React from "react";
 

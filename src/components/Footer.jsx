@@ -1,8 +1,12 @@
+import { motion } from "framer-motion";
 import { NavLink } from "react-router-dom";
+import { fadeUp } from "../animations/animations";
 
 const Footer = () => {
+
+  
   return (
-    <footer className="max-w-4xl relative mx-auto bg-navyBG rounded-3xl p-12 mt-8 grid center">
+    <motion.footer variants={fadeUp} animate="animate" initial="initial" className="max-w-4xl relative mx-auto  bg-navyBG rounded-3xl p-12 mt-8 grid center">
       <ul className="mb-8">
         <h3 className="font-bold text-2xl mb-2">Pages</h3>
         {pagelinks.map((link, i) => (
@@ -48,7 +52,7 @@ const Footer = () => {
           <img className="rounded-full" src="/logo.png" alt="logo image" />
         </div>
       </a>
-    </footer>
+    </motion.footer>
   );
 };
 

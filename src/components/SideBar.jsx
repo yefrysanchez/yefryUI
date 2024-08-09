@@ -1,5 +1,7 @@
+import { motion } from "framer-motion";
 import { useState } from "react";
 import { NavLink } from "react-router-dom";
+import { fadeRight } from "../animations/animations";
 
 const SideBar = () => {
   const links = [
@@ -13,7 +15,10 @@ const SideBar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <aside
+    <motion.aside
+    variants={fadeRight}
+    initial="initial"
+    animate="animate"
       className={`hidden  fixed lg:flex flex-col z-50 shadow-lg shadow-darkBackground ${
         isOpen
           ? "w-52 px-3 transition-all duration-500 overflow-hidden"
@@ -82,7 +87,7 @@ const SideBar = () => {
           </NavLink>
         ))}
       </ul>
-    </aside>
+    </motion.aside>
   );
 };
 

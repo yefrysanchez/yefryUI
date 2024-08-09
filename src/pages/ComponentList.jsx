@@ -1,6 +1,8 @@
 import { Link, useParams } from "react-router-dom";
 import { componentData, sectionData } from "../data/componentsData";
 import ComponentDisplay from "../components/ComponentDisplay";
+import { motion } from "framer-motion";
+import { fadeUp } from "../animations/animations";
 
 const ComponentList = () => {
   const { component } = useParams();
@@ -12,7 +14,7 @@ const ComponentList = () => {
   );
 
   return (
-    <main className="max-w-4xl mx-auto">
+    <motion.main variants={fadeUp} animate="animate" initial="initial" className="max-w-4xl mx-auto">
       <Link
         to={"/components"}
         className="mb-4 w-fit transition duration-200 flex gap-2 items-center hover:text-accent"
@@ -30,7 +32,7 @@ const ComponentList = () => {
           <ComponentDisplay data={data ? data : data2} />
         </div>
       </section>
-    </main>
+    </motion.main>
   );
 };
 

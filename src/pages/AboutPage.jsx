@@ -1,8 +1,12 @@
+import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
+import { fadeUp } from "../animations/animations";
 
 const AboutPage = () => {
+
+  
   return (
-    <main className="max-w-4xl mx-auto">
+    <motion.main variants={fadeUp} animate="animate" initial="initial" className="max-w-4xl mx-auto">
       <section className="mb-6 bg-navyBG p-8 rounded-3xl">
         <div className="mb-4 tracking-tighter border w-fit py-1 px-3 rounded-3xl border-softDarkText text-softDarkText font-semibold text-sm">
           <p>About</p>
@@ -64,45 +68,8 @@ const AboutPage = () => {
           </ul>
         </article>
 
-        <article className="bg-darkBackground p-12 rounded-3xl flex flex-col items-center">
-          <div className="mb-4 w-32 rounded-xl overflow-hidden ">
-            <img
-              className="h-full w-full object-cover scale-150"
-              src="/profile.jpeg"
-              alt=""
-            />
-          </div>
-          <div className="mb-8">
-            <h2 className="text-xl font-bold tracking-tighter mb-[2px]">
-              Yefry Sanchez
-            </h2>
-            <div className="mb-4 flex items-center gap-2">
-              <div className="h-2 w-2 bg-accent rounded-full">
-                <div className="h-2 w-2 bg-accent rounded-full animate-ping"></div>
-              </div>
-
-              <p className=" text-softDarkText"> Open to work</p>
-            </div>
-            <div className="text-3xl flex justify-center gap-4">
-              <a
-                target="_blank"
-                className="text-softDarkText hover:text-white transition duration-300"
-                href="https://www.linkedin.com/in/yefrysanchez/"
-              >
-                <i className="fa-brands fa-linkedin"></i>
-              </a>
-              <a
-                target="_blank"
-                className="text-softDarkText hover:text-white transition duration-300"
-                href="https://www.github.com/yefrysanchez"
-              >
-                <i className="fa-brands fa-github"></i>
-              </a>
-            </div>
-          </div>
-        </article>
       </section>
-    </main>
+    </motion.main>
   );
 };
 

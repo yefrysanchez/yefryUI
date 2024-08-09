@@ -1,6 +1,11 @@
+import { motion } from "framer-motion";
+import { fadeUp } from "../animations/animations";
+
 const ContactPage = () => {
+
+
   return (
-    <div className="max-w-4xl mx-auto ">
+    <motion.div variants={fadeUp} animate="animate" initial="initial" className="max-w-4xl mx-auto ">
       <section className="mb-6 bg-navyBG p-8 rounded-3xl">
         <div className="mb-4 tracking-tighter border w-fit py-1 px-3 rounded-3xl border-softDarkText text-softDarkText font-semibold text-sm">
           <p>Contact</p>
@@ -85,7 +90,7 @@ const ContactPage = () => {
           <input type="submit" value="Submit" className="bg-accent text-darkBackground font-bold p-2 rounded-3xl cursor-pointer hover:opacity-80 transition duration-300"/>
         </form>
       </section>
-    </div>
+    </motion.div>
   );
 };
 

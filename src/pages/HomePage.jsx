@@ -1,6 +1,11 @@
+import { motion } from "framer-motion";
+import { fadeUp } from "../animations/animations";
+
 const HomePage = () => {
+
+
   return (
-    <main className="max-w-4xl mx-auto">
+    <motion.main variants={fadeUp} initial="initial" animate="animate" className="max-w-4xl mx-auto">
       <section className="bg-navyBG rounded-3xl p-6 mb-4">
         <h1 className="font-bold mb-4 tracking-tight text-5xl text-center">
           Welcome to <br /> Yefry UI
@@ -8,7 +13,7 @@ const HomePage = () => {
         <p className="text-softDarkText font-bold max-w-lg mx-auto">
           Yefry UI offers a sleek collection of React components, expertly
           crafted and styled with Tailwind CSS. Designed by{" "}
-          <a className="underline italic" href="">
+          <a target="_blank" className="underline italic" href="https://www.linkedin.com/in/yefrysanchez/">
             Yefry Sanchez
           </a>
           , our components are ready to integrate into your projects, saving you
@@ -25,7 +30,7 @@ const HomePage = () => {
           <input className="max-w-lg bg-accent text-navyBG font-bold rounded-3xl py-2 px-6" type="submit" value="Submit" />
         </div>
       </form>
-    </main>
+    </motion.main>
   );
 };
 
